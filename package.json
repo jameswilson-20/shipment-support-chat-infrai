@@ -1,0 +1,19 @@
+{
+  "name": "shipment-support-chat-infrai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example": "node --experimental-strip-types src/support_chat.ts",
+    "test": "node --experimental-strip-types --test src/support_chat.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT"
+}

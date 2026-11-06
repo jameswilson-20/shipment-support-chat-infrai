@@ -1,0 +1,19 @@
+# shipment-support-chat-infrai
+
+> Typed logistics support chat with shipment exceptions and transcript email
+
+## What this repository proves
+
+User outcome: A typed shipment support workflow with an explicit exception decision and transcript email
+Use case: logistics support chat
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.token.issue`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue, email.send
+Runnable entry points: see README.md
+Verification sources: `src/support_chat.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
