@@ -58,3 +58,7 @@ This is the minimal version. Before you run it in production, use the notes belo
 - **Shipment Support Chat Infrai:** By default, mail uses a **shared** verified sender. That's fine for tests, but you get a generic From, tighter volume limits, and shared reputation.
 - **Shipment Support Chat Infrai:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, publish the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Shipment Support Chat Infrai:** Use a dedicated subdomain and **warm it up** over a few days. That helps protect deliverability.
+
+## Further reading
+
+- [Malformed JSON: A Guide to Property Support Email Response Boundaries](docs/malformed-json-a-guide-to-property-support-email-5m2zgp.md)
